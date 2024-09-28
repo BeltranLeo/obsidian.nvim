@@ -1027,7 +1027,7 @@ end
 util.wiki_link_name_only = function(opts)
   local header_or_block = ""
   if opts.anchor then
-    header_or_block = opts.anchor.anchor
+    header_or_block = string.format("#%s", opts.anchor.header)
   elseif opts.block then
     header_or_block = string.format("#%s", opts.block.id)
   end
