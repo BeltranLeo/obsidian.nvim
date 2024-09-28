@@ -367,7 +367,7 @@ end)
 
 describe("util.wiki_link_name_only()", function()
   it("should work without an anchor link", function()
-    assert.equals("[[123-foo]]", util.wiki_link_name_only { path = "123-foo.md", id = "123-foo", label = "Foo" })
+    assert.equals("[[123-foo|Foo]]", util.wiki_link_name_only { path = "123-foo.md", id = "123-foo", label = "Foo" })
   end)
 
   it("should work with an anchor link", function()
