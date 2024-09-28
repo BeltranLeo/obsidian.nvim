@@ -372,7 +372,7 @@ describe("util.wiki_link_name_only()", function()
 
   it("should work with an anchor link", function()
     assert.equals(
-      "[[123-foo#heading]]",
+      "[[123-foo#Heading|Foo]]",
       util.wiki_link_name_only {
         path = "123-foo.md",
         id = "123-foo",
